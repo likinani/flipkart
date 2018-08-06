@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Custom {
 	public static void main(String[] args) throws InterruptedException {
-		//flipkart("Apple iPhone 6 (Space Grey, 32 GB)");
+		
 		flipkart(1);
 	
 		}
@@ -35,13 +35,8 @@ public class Custom {
 			}
 		}
 
-
-
 ArrayList<String> s=new ArrayList<String> (driver.getWindowHandles()) ;
 driver.switchTo().window(s.get(1));
 System.out.println(driver.getTitle());
 driver.findElement(By.xpath("(//li[@class='col col-6-12'])[1]")).click();
-/*ArrayList<String> s=new ArrayList<String> (driver.getWindowHandles()) ;
-driver.switchTo().window(s.get(2));
-driver.findElement(By.xpath("//button[@class='_2AkmmA _2Npkh4 _2MWPVK']")).click();*/
 	}}
